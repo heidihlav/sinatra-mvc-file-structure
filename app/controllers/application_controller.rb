@@ -1,4 +1,7 @@
+# where the application configurations, routes, and controller actions are implemented
 class ApplicationController < Sinatra::Base
+
+
 
   configure do
   	set :views, "app/views"
@@ -8,4 +11,6 @@ class ApplicationController < Sinatra::Base
   get "/" do
   	erb :index
   end
+
+  
 end
